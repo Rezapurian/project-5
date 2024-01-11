@@ -1,0 +1,106 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card {
+    max-width: 370px;
+    width: 100%;
+    background-color:#fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link {
+   text-decoration: none;
+   background-color: #4070f4;
+   margin: 0 8px;
+   height: 34px;
+   width: 34px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-size: 18px;
+}
+.media-buttons .link:nth-child(1) {
+    background: #4267b2;
+}
+.media-buttons .link:nth-child(2) {
+    background: #1da1f3;
+}
+.media-buttons .link:nth-child(3) {
+    background: #e1306c;
+}
+.media-buttons .link:nth-child(4) {
+    background: #ff0000;
+}
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button {
+    background-color: #4070f4;
+    border-radius: 24px;
+    padding: 8px 24px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover {
+    background-color: #0e4bf1;
+}
